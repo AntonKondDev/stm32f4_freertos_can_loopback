@@ -33,7 +33,7 @@
 #define configCHECK_FOR_STACK_OVERFLOW          2
 #define configUSE_MALLOC_FAILED_HOOK            1
 #define configUSE_IDLE_HOOK                     0
-#define configUSE_TICK_HOOK                     0
+#define configUSE_TICK_HOOK                     1
 /* Трассировка */
 #define configUSE_TRACE_FACILITY                0
 /* Настройки прерываний NVIC для F4 (4 бита приоритета) */

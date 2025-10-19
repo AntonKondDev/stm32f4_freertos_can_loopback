@@ -1,6 +1,7 @@
-#include "freertos_hooks.h"
+#include "stm32f4xx_hal.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "freertos_hooks.h"
 
 void vApplicationMallocFailedHook(void)
 {
@@ -22,4 +23,9 @@ void vAssertCalled(const char *file, int line)
     (void)line;
     taskDISABLE_INTERRUPTS();
     for (;;) {}
+}
+
+void vApplicationTickHook(void)
+{
+    HAL_IncTick();
 }
