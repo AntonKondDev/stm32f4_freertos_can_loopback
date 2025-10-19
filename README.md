@@ -155,4 +155,8 @@ stm32f4-freertos-can-loopback/
   ```c
   DBGMCU->APB1FZ &= ~(DBGMCU_APB1_FZ_DBG_CAN1_STOP | DBGMCU_APB1_FZ_DBG_CAN2_STOP);
 
+## 🎥 Скриншоты и видео
 
+---
+
+- [Видео](https://youtu.be/1dAjeUZBr4c)
