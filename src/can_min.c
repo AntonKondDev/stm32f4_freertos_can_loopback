@@ -13,7 +13,7 @@ static void CAN2_GPIO_Init(void) {
     __HAL_RCC_GPIOB_CLK_ENABLE();
     GPIO_InitTypeDef g = {0};
 
-    // PB12 = CAN2_RX (AF9), Pull-Up обязателен чтобы RX был "recessive"
+    // PB12 = CAN2_RX (AF9), Pull-Up обязателен
     g.Pin       = GPIO_PIN_12;
     g.Mode      = GPIO_MODE_AF_PP;
     g.Pull      = GPIO_PULLUP;
