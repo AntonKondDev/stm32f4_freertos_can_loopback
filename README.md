@@ -35,19 +35,19 @@
 
 ## 📂 Структура проекта
 
-stm32f4-freertos-can-loopback/
-├── src/
-│   ├── main.c              # Точка входа, инициализация FreeRTOS и CAN
-│   ├── can_min.c           # Логика инициализации и проверки CAN2
-│   ├── system_clock.c      # Настройка PLL (SYSCLK = 168 MHz, APB1 = 42 MHz)
-│   ├── freertos_hooks.c    # Системные хуки RTOS (Tick, Idle)
-│   └── tasks.c             # Определение задач (TX/RX)
-├── include/
-│   ├── main.h
-│   ├── can_min.h
-│   └── freertos_hooks.h
-├── platformio.ini          # Конфигурация сборки для PlatformIO
-└── README.md               # Этот файл
+stm32f4-freertos-can-loopback/  
+├── src/  
+│   ├── main.c              # Точка входа, инициализация FreeRTOS и CAN  
+│   ├── can_min.c           # Логика инициализации и проверки CAN2  
+│   ├── system_clock.c      # Настройка PLL (SYSCLK = 168 MHz, APB1 = 42 MHz)  
+│   ├── freertos_hooks.c    # Системные хуки RTOS (Tick, Idle)  
+│   └── tasks.c             # Определение задач (TX/RX)  
+├── include/  
+│   ├── main.h  
+│   ├── can_min.h  
+│   └── freertos_hooks.h  
+├── platformio.ini          # Конфигурация сборки для PlatformIO  
+└── README.md               # Этот файл  
 
 ---
 
