@@ -3,7 +3,6 @@
 #include "task.h"
 #include "gpio.h"         
 #include "can_min.h"
-#include "busywait.h"
 
 static CAN_HandleTypeDef hcan2;
 static void CAN2_GPIO_Init(void);
@@ -82,7 +81,7 @@ static HAL_StatusTypeDef CAN2_Init_Loopback_500k(void)
     
     if (CAN2_Init_Loopback_500k() != HAL_OK) {
         for (;;) {
-            HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_14);
+            HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_14); //ошибка
             vTaskDelay(pdMS_TO_TICKS(300));
         }
     }

@@ -1,9 +1,7 @@
 #include "gpio.h"
 #include "system_clock.h"
-#include "tasks.h"
 #include "rtos.h"
 #include "can_min.h"
-#include "busywait.h"
 
 int main(void)
 {
