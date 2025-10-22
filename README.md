@@ -34,7 +34,7 @@
 ---
 
 ## 📂 Структура проекта
-
+```
 stm32f4-freertos-can-loopback/  
 ├── src/  
 │   ├── main.c              # Точка входа, инициализация FreeRTOS и CAN  
@@ -57,6 +57,7 @@ stm32f4-freertos-can-loopback/
 ├── .gitignore              # Исключения Git  
 ├── platformio.ini          # Конфигурация сборки для PlatformIO  
 └── README.md               # Этот файл  
+```
 ---
 
 ## 🔌 Аппаратная конфигурация
