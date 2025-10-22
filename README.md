@@ -38,17 +38,25 @@
 stm32f4-freertos-can-loopback/  
 ├── src/  
 │   ├── main.c              # Точка входа, инициализация FreeRTOS и CAN  
-│   ├── can_min.c           # Логика инициализации и проверки CAN2  
-│   ├── system_clock.c      # Настройка PLL (SYSCLK = 168 MHz, APB1 = 42 MHz)  
-│   ├── freertos_hooks.c    # Системные хуки RTOS (Tick, Idle)  
-│   └── tasks.c             # Определение задач (TX/RX)  
+│   ├── can_min.c           # Логика инициализации и проверки CAN2 (Loopback)  
+│   ├── freertos_hooks.c    # Системные хуки FreeRTOS (Tick, Idle, MallocFail)  
+│   ├── gpio.c              # Настройка портов GPIO (LED-индикация, CAN-пины)  
+│   └── system_clock.c      # Настройка PLL (SYSCLK = 168 MHz, APB1 = 42 MHz)  
+│  
 ├── include/  
-│   ├── main.h  
-│   ├── can_min.h  
-│   └── freertos_hooks.h  
+│   ├── can_min.h           # Заголовок для модуля CAN2  
+│   ├── freertos_hooks.h    # Заголовок системных хуков FreeRTOS  
+│   ├── FreeRTOSConfig.h    # Конфигурация ядра FreeRTOS  
+│   ├── gpio.h              # Определения пинов, функций GPIO  
+│   ├── rtos.h              # Определения для FreeRTOS API и задач  
+│   └── system_clock.h      # Прототипы функций настройки системного тактирования  
+│  
+├── lib/                    # Папка для внешних библиотек  
+├── assets/                 # Видео демонстрация  
+├── test/                   # Зарезервировано для будущих тестов (пока пустая)  
+├── .gitignore              # Исключения Git  
 ├── platformio.ini          # Конфигурация сборки для PlatformIO  
 └── README.md               # Этот файл  
-
 ---
 
 ## 🔌 Аппаратная конфигурация
