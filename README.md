@@ -31,6 +31,8 @@
    кадр отправляется через `HAL_CAN_AddTxMessage()` и принимается обратно через FIFO0,  
    подтверждая корректность бит-таймингов и фильтрации.
 
+- [Видео](https://youtu.be/1dAjeUZBr4c)
+
 ---
 
 ## Структура проекта
@@ -163,9 +165,3 @@ stm32f4-freertos-can-loopback/
 - Чтобы периферия не "замораживалась" при паузе отладчика:  
   ```c
   DBGMCU->APB1FZ &= ~(DBGMCU_APB1_FZ_DBG_CAN1_STOP | DBGMCU_APB1_FZ_DBG_CAN2_STOP);
-
-## Скриншоты и видео  
-
----
-
-- [Видео](https://youtu.be/1dAjeUZBr4c)
